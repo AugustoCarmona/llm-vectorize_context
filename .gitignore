@@ -104,3 +104,12 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# ChromaDB specific files and directories
+chromadb/
+*.chromadb
+*.db
+
+chroma_data/
+
+config.json
