@@ -25,7 +25,7 @@ El archivo `config.json` debe componerse de la siguiente forma:
 }
 ```
 
-En caso de no contar con créditos disponibles de OpenAI, no hay problema, ya que el fin de este caso de estudio es mostrar cómo funcionan los embeddings para convertir información compleja, como palabras, imágenes o documentos, en vectores en un espacio multidimensional que facilite la comparación y el análisis de datos mediante el cálculo del seno. Dichas funciones se encuentran en los módulos `car_data_etl.py` y `chroma_utils.py` y se explican más en detalle en este README; sin embargo, sin créditos de OpenAI, el contexto generado no se podrá servir al LLM, por lo que la funcionalidad de chat no estará disponible.
+En caso de no contar con créditos disponibles de OpenAI, no hay problema, ya que el fin de este caso de estudio es mostrar cómo funcionan los embeddings para convertir información compleja, como palabras, imágenes o documentos, en vectores en un espacio multidimensional que facilite la comparación y el análisis de datos mediante el cálculo del coseno. Dichas funciones se encuentran en los módulos `car_data_etl.py` y `chroma_utils.py` y se explican más en detalle en este README; sin embargo, sin créditos de OpenAI, el contexto generado no se podrá servir al LLM, por lo que la funcionalidad de chat no estará disponible.
 
 ---
 
