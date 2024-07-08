@@ -113,3 +113,5 @@ chromadb/
 chroma_data/
 
 config.json
+
+car_review_embeddings
