@@ -49,20 +49,3 @@ def prepare_car_reviews_data(data_path: pathlib.Path, vehicle_years: list[int] =
     metadatas = car_review_db_data.drop("Review").to_dicts()
 
     return {"ids": ids, "documents": documents, "metadatas": metadatas}
-
-""" Ejemplo:
-{
-    'ids': ['review12', 'review13', 'review14'],
-    'documents': [
-        "Last hybrid I by from Kia. 2016 Kia Optima Hybrid Sedan EX 4dr Sedan (2.4L 4cyl gas/electric hybrid 6A). No so high-brid, 25mpg in the city 33 hwy on the 2016 ex hybrid. Taken it in twice stating poor mpg and was told it's just not broken in yet. I have 10k on it when is it going to break in?  Liars!!",
-        "A hybrid with good styling. If you are wanting a hybrid, but don't want the ugly as dog poop Prius, this is a car for you to check out.",
-        "Love the 2016 Kia Optima Hybrid (even more than th). They changed the interior in the 2017. They did improve the comfort of the seats/headrest, but for me, they went backwards in terms of the interior styling- very bland and generic."
-    ],
-    'metadatas': [
-        {'Author': 'Ken', 'Rating': 5},
-        {'Author': 'Tod Bowermaster', 'Rating': 5},
-        {'Author': 'Nick', 'Rating': 3}
-    ]
-}
-
-"""

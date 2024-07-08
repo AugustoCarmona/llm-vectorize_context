@@ -1,5 +1,8 @@
 # Vectorized Context
 
+> Nota: El proyecto es funcional, pero la documentación del mismo aún se encuentra en proceso. De momento, solo se ha definido el objetivo y alcance del mismo. Sin embargo, siguiendo los comentarios en el código, así como el artículo que dio origen a este repositorio: ['Embeddings and Vector Databases With ChromaDB'](https://realpython.com/chromadb-vector-database/#represent-data-as-vectors) es posible entender su lógica.
+> Durante los próximos días terminaré de documentar este README.
+
 ![image](https://miro.medium.com/v2/resize:fit:793/0*RTW5byy6eH_eSWTP.png)
 
 El siguiente repositorio es un chatbot de consola que funciona como aplicación técnica de los casos de uso presentados en el artículo ['Embeddings and Vector Databases With ChromaDB'](https://realpython.com/chromadb-vector-database/#represent-data-as-vectors) de realpython.com. Su objetivo es brindar un acceso sencillo al caso de uso explicado, demostrando cómo los conceptos teóricos del Álgebra Vectorial pueden emplearse para vectorizar documentos (en este caso, texto), integrándolos en bases de datos vectoriales como ChromaDB. Esto permite generar comparaciones semánticas que se utilizarán para proporcionar el contexto adecuado al modelo de LLM, GPT-3.5 Turbo de OpenAI, con el fin de obtener respuestas específicas según los datos con los que se alimente el modelo.
@@ -30,6 +33,8 @@ En caso de no contar con créditos disponibles de OpenAI, no hay problema, ya qu
 
 #### car_data_etl
 
+Este módulo proporciona una función para preparar datos de las revisiones de autos para su indexación en ChromaDB. La función prepare_car_reviews_data toma un archivo de datos de revisiones de autos y devuelve un diccionario que contiene los identificadores únicos, textos de revisión y metadatos asociados para cada revisión de autos de la siguiente forma:
+
 ```json
 {
   "ids": ["review12", "review13", "review14"],
@@ -45,6 +50,8 @@ En caso de no contar con créditos disponibles de OpenAI, no hay problema, ya qu
   ]
 }
 ```
+
+lo que hace la función prepare_car_reviews_data es procesar un archivo CSV con datos de revisiones de autos, filtrar las revisiones según los años de vehículos especificados, y devolver los datos en un formato adecuado para la indexación en ChromaDB generando identificadores únicos, extrayendo y limpiando textos de revisiones asi como dandoles estructura.
 
 #### chroma_utils
 
