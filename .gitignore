@@ -114,4 +114,5 @@ chroma_data/
 
 config.json
 
-car_review_embeddings
+# ChromaDB specific files and directories
+car_review_embeddings/

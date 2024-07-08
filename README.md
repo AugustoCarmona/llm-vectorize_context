@@ -1,10 +1,14 @@
 # Vectorized Context
 
-El siguiente repositorio es un chatbot de consola que funciona como aplicación técnica de los casos de uso presentados en el artículo 'Embeddings and Vector Databases With ChromaDB' de realpython.com. Su objetivo es brindar un acceso sencillo al caso de uso explicado, demostrando cómo los conceptos teóricos del Álgebra Vectorial pueden emplearse para vectorizar documentos (en este caso, texto), integrándolos en bases de datos vectoriales como ChromaDB. Esto permite generar comparaciones semánticas que se utilizarán para proporcionar el contexto adecuado al modelo de LLM, GPT-3.5 Turbo de OpenAI, con el fin de obtener respuestas específicas según los datos con los que se alimente el modelo.
+![image](https://miro.medium.com/v2/resize:fit:793/0*RTW5byy6eH_eSWTP.png)
 
-El dataset utilizado para generar las colecciones de ChromaDB se obtuvo de Kaggle y corresponde a un conjunto de datos que contiene la opinión del consumidor y la calificación en estrellas por fabricante/modelo/tipo de automóvil según el sitio de venta de autos usados edmunds.com. El objetivo de este chatbot es que, según la información de las reviews contenidas en el sitio, pueda resolver dudas específicas sobre modelos, marcas o tipos de vehículos, orientando sus respuestas al consumidor.
+El siguiente repositorio es un chatbot de consola que funciona como aplicación técnica de los casos de uso presentados en el artículo ['Embeddings and Vector Databases With ChromaDB'](https://realpython.com/chromadb-vector-database/#represent-data-as-vectors) de realpython.com. Su objetivo es brindar un acceso sencillo al caso de uso explicado, demostrando cómo los conceptos teóricos del Álgebra Vectorial pueden emplearse para vectorizar documentos (en este caso, texto), integrándolos en bases de datos vectoriales como ChromaDB. Esto permite generar comparaciones semánticas que se utilizarán para proporcionar el contexto adecuado al modelo de LLM, GPT-3.5 Turbo de OpenAI, con el fin de obtener respuestas específicas según los datos con los que se alimente el modelo.
+
+El dataset utilizado para generar las colecciones de ChromaDB se obtuvo de [Kaggle](https://www.kaggle.com/datasets/ankkur13/edmundsconsumer-car-ratings-and-reviews) y corresponde a un conjunto de datos que contiene la opinión del consumidor y la calificación en estrellas por fabricante/modelo/tipo de automóvil según el sitio de venta de autos usados edmunds.com. El objetivo de este chatbot es que, según la información de las reviews contenidas en el sitio, pueda resolver dudas específicas sobre modelos, marcas o tipos de vehículos, orientando sus respuestas al consumidor.
 
 En caso de tener alguna sugerencia, o corrección para el proyecto, feel free to contribute.
+
+---
 
 ### Requerimientos:
 
